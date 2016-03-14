@@ -29,7 +29,9 @@ object ParaParser {
           // white space or punctuation characters:
           val allTokens = para.text.split("""[\s,\.\:\(\);]+""")
           for (oneToken <- allTokens) {
-            println (n + "\t" + oneToken)
+            if (oneToken.length > 0) {
+              println (n + "\t" + oneToken)
+            }
           }
         }
       }
