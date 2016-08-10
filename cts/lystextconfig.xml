@@ -12,7 +12,7 @@
     		<citation
     			label="section"
     			scope="/tei:TEI/tei:text/tei:body"
-    			xpath="/tei:dipv[@n = '?']">
+    			xpath="/tei:p[@n = '?']">
     			
     		</citation>
     	</citationMapping>
