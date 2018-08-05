@@ -1,8 +1,8 @@
 # lysias1
 
-Digital resources for reading Lysias 1 in HC Greek 203 course.
+Digital resources for reading Lysias 1 in HC Greek 101-102 sequence.
 
-Planned contents:
+Requirements:
 
-- XML edition
-- simple utilities in Scala for working with text
+-   citable text of Lysias 1
+-   full morphological analysis
