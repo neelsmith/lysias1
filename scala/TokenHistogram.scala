@@ -14,8 +14,6 @@ object TokenHistogram {
     } else {
       val histo = scala.collection.mutable.Map[String, Int]()
       var totalTokens = 0
-      val kai = "καὶ"
-      // myMap.contains("fish")
       for (arg <- args) {
         val tokenList = scala.io.Source.fromFile(arg, "UTF-8").getLines()
         for (oneToken <- tokenList) {
@@ -35,7 +33,6 @@ object TokenHistogram {
       println ("token\tcount\trunning total\trunning pct.")
       for ((k,v) <- countSort.reverse) {
         runningTotal = runningTotal + v
-
         val twoPlaces = (math floor (100*runningTotal / totalTokens) * 100) / 100
         println (k + "\t" + v + "\t" + runningTotal + "\t" + twoPlaces)
       }
